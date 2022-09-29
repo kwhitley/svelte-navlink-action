@@ -11,10 +11,12 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/kwhitley/svelte-navlink-action?style=social)](https://github.com/kwhitley/svelte-navlink-action)
 [![Twitter](https://img.shields.io/twitter/follow/kevinrwhitley.svg?style=social&label=Follow)](https://www.twitter.com/kevinrwhitley)
 
-Minimalist Svelte action to simply inject an `active` class into route-matched links.  Styling is up to you!
+Minimalist Svelte action to simply inject an `active` class into route-matched links. Styling is up to you!
 
 ## Example
+
 ###### // Component.svelte
+
 ```svelte
 <script>
   import { navlink } from 'svelte-navlink-action'
@@ -31,6 +33,7 @@ Minimalist Svelte action to simply inject an `active` class into route-matched l
 </ul>
 
 <!-- STYLES -->
+
 <!-- alternatively just add the appropriate .active class styles to an imported stylesheet -->
 <style>
   :global(a.active) {
@@ -40,8 +43,9 @@ Minimalist Svelte action to simply inject an `active` class into route-matched l
 ```
 
 ## API
+
 #### `use:navlink` || `use:navlink={{ exact?: boolean = false }}`
 
-| Name | Type(s) | Default | Description |
-| --- | --- | --- | --- |
-| `exact` | `boolean` | **false** | Requires an exact url match if set to true, otherwise will match off the base-path of the url.
+| Name    | Type(s)   | Default   | Description                                                                                    |
+| ------- | --------- | --------- | ---------------------------------------------------------------------------------------------- |
+| `exact` | `boolean` | **false** | Requires an exact url match if set to true, otherwise will match off the base-path of the url. |

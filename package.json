@@ -1,7 +1,7 @@
 {
-	"name": "svelte-navlink-action",
+  "name": "svelte-navlink-action",
   "description": "Minimalist Svelte action to inject .active class in route-matched links.",
-	"version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "svelte",
     "action",
@@ -19,35 +19,37 @@
     "url": "https://github.com/kwhitley/svelte-navlink-action/issues",
     "email": "krwhitley@gmail.com"
   },
-	"scripts": {
-		"dev": "vite dev",
-		"build": "svelte-kit sync && svelte-package",
-		"test": "playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write .",
+  "scripts": {
+    "dev": "vite dev",
+    "prebuild": "yarn format && yarn lint && yarn check",
+    "build": "svelte-kit sync && svelte-package",
+    "test": "playwright test",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write .",
+    "prerelease": "yarn build",
     "release": "release --tag --push --src=package"
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.25.0",
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
-		"@sveltejs/package": "next",
-		"@typescript-eslint/eslint-plugin": "^5.27.0",
-		"@typescript-eslint/parser": "^5.27.0",
-		"eslint": "^8.16.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.6.2",
-		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.44.0",
-		"svelte-check": "^2.7.1",
-		"svelte-preprocess": "^4.10.6",
-		"tslib": "^2.3.1",
-		"typescript": "^4.7.4",
-		"vite": "^3.1.0",
-		"yarn-release": "^1.10.3"
-	},
-	"type": "module"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.25.0",
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "@sveltejs/package": "next",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.7.1",
+    "svelte-preprocess": "^4.10.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.1.0",
+    "yarn-release": "^1.10.3"
+  },
+  "type": "module"
 }

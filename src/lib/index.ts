@@ -1,14 +1,13 @@
 import { page } from '$app/stores'
 
 type ActionOptions = {
-  exact?: Boolean,
+  exact?: boolean
 }
 
-const isActive = (href: string, path: string, exact: Boolean) => exact
-                                        ? path === href
-                                        : path.indexOf(href) === 0
+const isActive = (href: string, path: string, exact: boolean) =>
+  exact ? path === href : path.indexOf(href) === 0
 
-const injectIfActive = (node: HTMLElement, options: ActionOptions) => page => {
+const injectIfActive = (node: HTMLElement, options: ActionOptions) => (page) => {
   if (isActive(node.getAttribute('href') || '', page.url.pathname, options?.exact)) {
     node.classList.add('active')
   } else {

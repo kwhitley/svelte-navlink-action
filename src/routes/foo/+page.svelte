@@ -1,3 +1,1 @@
-<h1>
-  foo/ Home
-</h1>
+<h1>foo/ Home</h1>

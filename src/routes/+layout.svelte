@@ -11,7 +11,7 @@
   <li><a href="/foo/3" use:navlink>foo/3</a></li>
 </ul>
 
-<hr>
+<hr />
 
 <slot />
 
