@@ -11,11 +11,11 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/kwhitley/svelte-navlink-action?style=social)](https://github.com/kwhitley/svelte-navlink-action)
 [![Twitter](https://img.shields.io/twitter/follow/kevinrwhitley.svg?style=social&label=Follow)](https://www.twitter.com/kevinrwhitley)
 
-Minimalist Svelte action to simply inject an **"**.active** class into route-matched links.  Styling is up to you!
+Minimalist Svelte action to simply inject an `active` class into route-matched links.  Styling is up to you!
 
 ## Example
+###### // Component.svelte
 ```svelte
-// Component.svelte
 <script>
   import { navlink } from 'svelte-navlink-action'
 </script>
@@ -31,6 +31,7 @@ Minimalist Svelte action to simply inject an **"**.active** class into route-mat
 </ul>
 
 <!-- STYLES -->
+<!-- alternatively just add the appropriate .active class styles to an imported stylesheet -->
 <style>
   :global(a.active) {
     color: red;
