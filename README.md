@@ -3,7 +3,9 @@
 [![Version](https://img.shields.io/npm/v/svelte-navlink-action.svg?style=flat-square)](https://npmjs.com/package/svelte-navlink-action)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/svelte-navlink-action?style=flat-square)](https://bundlephobia.com/result?p=svelte-navlink-action)
 ![Build Status](https://img.shields.io/github/workflow/status/kwhitley/svelte-navlink-action/build?style=flat-square)
-[![Coverage Status](https://img.shields.io/coveralls/github/kwhitley/svelte-navlink-action/v0.x?style=flat-square)](https://coveralls.io/github/kwhitley/svelte-navlink-action?branch=v0.x)
+
+<!-- [![Coverage Status](https://img.shields.io/coveralls/github/kwhitley/svelte-navlink-action/v0.x?style=flat-square)](https://coveralls.io/github/kwhitley/svelte-navlink-action?branch=v0.x) -->
+
 [![NPM Weekly Downloads](https://img.shields.io/npm/dw/svelte-navlink-action?style=flat-square)](https://npmjs.com/package/svelte-navlink-action)
 [![Open Issues](https://img.shields.io/github/issues/kwhitley/svelte-navlink-action?style=flat-square)](https://github.com/kwhitley/svelte-navlink-action/issues)
 
