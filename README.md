@@ -22,9 +22,9 @@ Minimalist Svelte action to simply inject an `active` class into route-matched l
 
 <!-- MARKUP -->
 <ul>
-  <li><a href="/" use:navlink>Home</a></li>
-  <li><a href="/foo" use:navlink>Foo (default/exact)</a></li>
-  <li><a href="/foo" use:navlink={{ exact: false }}>Foo (exact=false)</a></li>
+  <li><a href="/" use:navlink={{ exact: true }}>Home</a></li>
+  <li><a href="/foo" use:navlink>Foo (and children)</a></li>
+  <li><a href="/foo" use:navlink={{ exact: true }}>Foo (exact)</a></li>
   <li><a href="/foo/1" use:navlink>foo/1</a></li>
   <li><a href="/foo/2" use:navlink>foo/2</a></li>
   <li><a href="/foo/3" use:navlink>foo/3</a></li>
