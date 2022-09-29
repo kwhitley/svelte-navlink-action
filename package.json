@@ -1,7 +1,7 @@
 {
   "name": "svelte-navlink-action",
   "description": "Minimalist Svelte action to inject .active class in route-matched links.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": [
     "svelte",
     "action",
