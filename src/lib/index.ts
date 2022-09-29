@@ -17,18 +17,15 @@ try {
       }
     }
   })(window.history)
-} catch (err) {
-  console.warn('use:navlink executed outside of the browser')
-}
+} catch (err) {}
 
 const isActive = (href: string, exact: boolean) => {
   const path = new URL(location.href).pathname
-  console.log('testing', path, 'against', href)
 
   return exact ? path === href : path.indexOf(href) === 0
 }
 
-const injectIfActive = (node: HTMLElement, options: ActionOptions) => {
+const injectIfActive = (node: HTMLElement, options) => {
   if (isActive(node.getAttribute('href') || '', options?.exact)) {
     node.classList.add('active')
   } else {
