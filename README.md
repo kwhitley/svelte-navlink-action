@@ -34,7 +34,7 @@ Minimalist Svelte action to simply inject an `active` class into route-matched l
 
 <!-- alternatively just add the appropriate .active class styles to an imported stylesheet -->
 <style>
-  :global(a.active) {
+  a:global(.active) {
     color: red;
   }
 </style>
