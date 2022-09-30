@@ -16,7 +16,7 @@
 <slot />
 
 <style>
-  :global(a.active) {
+  a:global(.active) {
     color: red;
   }
 </style>
