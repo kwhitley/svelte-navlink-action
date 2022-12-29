@@ -9,6 +9,9 @@
   <li><a href="/foo/1" use:navlink>foo/1</a></li>
   <li><a href="/foo/2" use:navlink>foo/2</a></li>
   <li><a href="/foo/3" use:navlink>foo/3</a></li>
+  <li><a href="/foo/3" use:navlink={{ exact: true }}>foo/3 (exact)</a></li>
+  <li><a href="/foo/3?foo" use:navlink>foo/3?foo</a></li>
+  <li><a href="?foo" use:navlink>?foo</a></li>
 </ul>
 
 <hr />

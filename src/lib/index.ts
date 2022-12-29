@@ -20,7 +20,13 @@ try {
 } catch (err) {}
 
 const isActive = (href: string, exact: boolean) => {
-  const path = new URL(location.href).pathname
+  const { pathname, search } = new URL(location.href)
+  const path = pathname + search
+
+  if (href.indexOf('?') === 0) {
+    // only handle search
+    return href === search
+  }
 
   return exact ? path === href : path.indexOf(href) === 0
 }
